@@ -11,6 +11,7 @@ import {
 import { H1, H4 } from "../../utils/typography";
 // import avatar from "../../images/avatar.jpg";
 import avatar from "../../images/me.jpg";
+import resume from "../../images/MoisesCV.pdf";
 
 const StyledSection = styled.div`
   display: flex;
@@ -106,7 +107,7 @@ class Header extends Component {
           </Status>
           <Buttons className="scrollreveal">
             <Button onClick={() => smoothScroll("footer")}>Contact Me</Button>
-            <Button secondary href="" target="_blank" rel="noopener">
+            <Button secondary href={resume} target="_blank" rel="noopener">
               Resume
             </Button>
           </Buttons>
