@@ -205,8 +205,6 @@ class Navbar extends Component {
   };
 
   render() {
-    console.log(this.state.isToggleOn, this.state.isBlueNav);
-
     return (
       <Nav isBlueNav={this.state.isBlueNav}>
         <Wrapper isBlueNav={this.state.isBlueNav}>
@@ -238,18 +236,13 @@ class Navbar extends Component {
           >
             <Scrollspy
               className={"scrollspy"}
-              items={[
-                "home",
-                "about",
-                "skills",
-                "portfolio",
-                "experience",
-                "outside",
-                "more"
-              ]}
+              items={["home", "about", "skills", "portfolio", "experience"]}
               currentClassName="scrollspy--item-active"
-              offset={-250}
+              // offset={-150}
             >
+              <Item>
+                <NavButton refID="home" text="Home" />
+              </Item>
               <Item>
                 <NavButton refID="about" text="About" />
               </Item>
@@ -261,12 +254,6 @@ class Navbar extends Component {
               </Item>
               <Item>
                 <NavButton refID="experience" text="Experience" />
-              </Item>
-              <Item>
-                <NavButton refID="outside" text="Outside of Work" />
-              </Item>
-              <Item>
-                <NavButton refID="more" text="More" />
               </Item>
             </Scrollspy>
           </div>

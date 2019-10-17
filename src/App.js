@@ -30,6 +30,7 @@ import fontLight from "./fonts/StratumNo1 Light.ttf";
 import fontMedium from "./fonts/StratumNo1 Medium.ttf";
 import fontRegular from "./fonts/StratumNo1 Regular.ttf";
 import fontThin from "./fonts/StratumNo1 Thin.ttf";
+import Portfolio from "./components/portfolio/portfolio";
 
 //global styling
 
@@ -155,7 +156,7 @@ class App extends Component {
       <>
         <GlobalStyle />
         <Particles className="particles-js" params={particlesOptions} />
-        <MeteorComponent num={10} />
+        {/* <MeteorComponent num={10} /> */}
         <NavBar />
         <Section id="home" transparent>
           <Header />
@@ -165,6 +166,10 @@ class App extends Component {
         </Section>
         <Section id="skills">
           <Skills />
+        </Section>
+
+        <Section id="portfolio">
+          <Portfolio />
         </Section>
 
         <Section id="experience">
