@@ -104,7 +104,7 @@ class Header extends Component {
             &lt; Full-Stack Web Developer &#47;&gt;
           </Status>
           <Buttons className="scrollreveal">
-            <Button>Contact Me</Button>
+            <Button onClick={() => smoothScroll("footer")}>Contact Me</Button>
             <Button secondary href="" target="_blank" rel="noopener">
               Resume
             </Button>

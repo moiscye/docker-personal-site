@@ -260,7 +260,7 @@ class Navbar extends Component {
                 <NavButton refID="portfolio" text="Portfolio" />
               </Item>
               <Item>
-                <NavButton refID="experiences" text="Experiences" />
+                <NavButton refID="experience" text="Experience" />
               </Item>
               <Item>
                 <NavButton refID="outside" text="Outside of Work" />

@@ -12,6 +12,7 @@ import Header from "../src/components/home/header";
 import AboutMe from "./components/about/about";
 import Skills from "./components/skills/skills";
 import Experience from "./components/experience/experience";
+import Footer from "./components/footer/footer";
 
 import {
   colorHeader1,
@@ -168,6 +169,10 @@ class App extends Component {
 
         <Section id="experience">
           <Experience />
+        </Section>
+
+        <Section id="footer" transparent>
+          <Footer />
         </Section>
       </>
     );
