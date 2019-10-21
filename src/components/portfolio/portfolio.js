@@ -194,7 +194,7 @@ const ShowAllBtn = styled.button`
   color: ${colorGrey4};
   border: none;
   border-bottom: 1px solid ${colorGrey4};
-  animation: ${props => (props.twinkle ? twinkleEffect : "none")} 3s infinite;
+  animation: ${twinkleEffect} 3s infinite;
   :hover {
     color: ${colorGrey2};
     border-bottom: 2px solid ${colorGrey2};
@@ -299,7 +299,11 @@ class Portfolio extends Component {
           />
           <ShowAllBtn>
             {/* {this.state.showAllText} */}
-            More projects coming up soon...
+
+            <Button twinkle>
+              <span>More projects coming up soon...</span>
+              <WhiteDot id="live" />
+            </Button>
           </ShowAllBtn>
         </Wrapper>
       </Container>
