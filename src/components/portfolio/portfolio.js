@@ -11,6 +11,8 @@ import {
   colorPrimary,
   colorPrimaryLight
 } from "../../utils/variables";
+
+import { twinkleEffect } from "../../utils/keyframes";
 import { Container } from "../common/container";
 
 import { svg_icons } from "../../feed/skillIcons";
@@ -137,7 +139,7 @@ const Button = styled.a`
     props.secondary ? colorGrey4 : colorPrimaryLight};
 
   & > * {
-    animation: ${props => (props.pulsate ? "none" : "none")} 3s infinite;
+    animation: ${props => (props.twinkle ? "none" : "none")} 3s infinite;
   }
 
   :not(:last-child) {
@@ -192,7 +194,7 @@ const ShowAllBtn = styled.button`
   color: ${colorGrey4};
   border: none;
   border-bottom: 1px solid ${colorGrey4};
-
+  animation: ${props => (props.twinkle ? twinkleEffect : "none")} 3s infinite;
   :hover {
     color: ${colorGrey2};
     border-bottom: 2px solid ${colorGrey2};
@@ -224,7 +226,7 @@ const DetailsComponent = ({ className, icons, title, text }) => {
 const ButtonsComponent = ({ className, title, liveLink, sourceLink }) => {
   return (
     <Buttons className={className}>
-      <Button href={liveLink} target="_blank" rel="noopener" pulsate>
+      <Button href={liveLink} target="_blank" rel="noopener" twinkle>
         <WhiteDot id="live" />
         <span>Live</span>
       </Button>
