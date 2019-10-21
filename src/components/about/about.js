@@ -78,7 +78,7 @@ class AboutMe extends Component {
               in skills, qualifications, and knowledge.
               <br />
               <br />
-              Please feel free to read more about me, checkout my resume,
+              Please feel free to read more about me. Checkout my resume,
               projects or contact me.
             </P>
           </About>
