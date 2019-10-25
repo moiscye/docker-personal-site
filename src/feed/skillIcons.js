@@ -1,4 +1,5 @@
 import React from "react";
+// svg's are from: https://simpleicons.org/
 import { ReactComponent as NodeJSSvg } from "../images/technologyIcons/node-dot-js.svg";
 import { ReactComponent as SassSvg } from "../images/technologyIcons/sass.svg";
 import { ReactComponent as ReduxSvg } from "../images/technologyIcons/redux.svg";
@@ -14,6 +15,9 @@ import { ReactComponent as FirebaseSvg } from "../images/technologyIcons/firebas
 import { ReactComponent as JestSvg } from "../images/technologyIcons/jest.svg";
 import { ReactComponent as MongoDBSvg } from "../images/technologyIcons/mongodb.svg";
 import { ReactComponent as JiraSvg } from "../images/technologyIcons/jira.svg";
+import { ReactComponent as RedisSvg } from "../images/technologyIcons/redis.svg";
+import { ReactComponent as PostgresqlSvg } from "../images/technologyIcons/postgresql.svg";
+import { ReactComponent as DockerSvg } from "../images/technologyIcons/docker.svg";
 
 export const svg_icons = [
   {
@@ -91,5 +95,20 @@ export const svg_icons = [
     name: "Jest",
     color: "#C21325",
     svg: <JestSvg />
+  },
+  {
+    name: "Redis",
+    color: "#D82C20",
+    svg: <RedisSvg />
+  },
+  {
+    name: "Postgresql",
+    color: "#336791",
+    svg: <PostgresqlSvg />
+  },
+  {
+    name: "Docker",
+    color: "#1488C6",
+    svg: <DockerSvg />
   }
 ];
